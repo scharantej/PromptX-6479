@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LLM Prompt Optimizer</title>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+<h1>LLM Prompt Optimizer</h1>
+<p>
+This tool helps you optimize your prompts for large language models (LLMs) to get better results.
+</p>
+<form action="/results" method="post">
+<div class="form-group">
+<label for="prompt">Prompt</label>
+<textarea class="form-control" id="prompt" name="prompt" rows="4"></textarea>
+</div>
+<div class="form-group">
+<label for="llm_type">LLM Type</label>
+<select class="form-control" id="llm_type" name="llm_type">
+<option value="text-davinci-003">Text-Davinci-003</option>
+<option value="text-curie-001">Text-Curie-001</option>
+<option value="text-babbage-001">Text-Babbage-001</option>
+<option value="text-ada-001">Text-Ada-001</option>
+</select>
+</div>
+<button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
+</body>
+</html>
+
+
